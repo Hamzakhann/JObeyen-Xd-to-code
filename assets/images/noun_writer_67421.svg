@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73.854" height="82" viewBox="0 0 73.854 82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b83fc;
+      }
+
+      .cls-2 {
+        fill: #1e2c40;
+      }
+    </style>
+  </defs>
+  <g id="noun_writer_67421" transform="translate(-9.47 -5)">
+    <g id="Group_16" data-name="Group 16" transform="translate(9.47 5)">
+      <path id="Path_70" data-name="Path 70" class="cls-1" d="M87.868,51.245a5.274,5.274,0,0,0-7.453,0l-2.483,2.485,7.452,7.449L87.868,58.7A5.271,5.271,0,0,0,87.868,51.245Z" transform="translate(-15.556 -8.974)"/>
+      <path id="Path_71" data-name="Path 71" class="cls-1" d="M47.713,81.679l-2.481,9.929,9.931-2.483L80,64.294l-7.454-7.45Z" transform="translate(-12.649 -9.608)"/>
+      <path id="Path_72" data-name="Path 72" class="cls-2" d="M19.8,21.455H54.3a1.917,1.917,0,0,0,0-3.834H19.8a1.917,1.917,0,0,0,0,3.834Z" transform="translate(-10.218 -6.122)"/>
+      <path id="Path_73" data-name="Path 73" class="cls-2" d="M19.8,34.079H54.3a1.917,1.917,0,0,0,0-3.834H19.8a1.917,1.917,0,0,0,0,3.834Z" transform="translate(-10.218 -7.244)"/>
+      <path id="Path_74" data-name="Path 74" class="cls-2" d="M56.219,44.783A1.914,1.914,0,0,0,54.3,42.867H19.8a1.917,1.917,0,1,0,0,3.833H54.3A1.911,1.911,0,0,0,56.219,44.783Z" transform="translate(-10.218 -8.366)"/>
+      <path id="Path_75" data-name="Path 75" class="cls-2" d="M63.138,51V8.833A3.831,3.831,0,0,0,59.306,5h-46A3.835,3.835,0,0,0,9.47,8.833V62.5A3.835,3.835,0,0,0,13.3,66.336h34.5ZM47.805,60.914V51h9.913ZM43.972,51V62.5H13.3V8.833h46V47.167h-11.5A3.834,3.834,0,0,0,43.972,51Z" transform="translate(-9.47 -5)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/master.css">
+    <link rel="stylesheet" href="../assets/styles/masterMobile.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Jobbyen</title>
+</head>
+
+<body>
+<div class="container-fluid" name="header">
+    <div class="row">
+        <div name="logo" class="col"><img src="../assets/images/Asset-1.svg" alt="Error" name="logo" class="d-inline">
+            <p class="bolder d-inline">Find Job</p>
+            <p class="bolder d-inline">Find Resume</p>
+            <p class="bolder d-inline">What’new?</p>
+        </div>
+        <div name="log_but" class="col-4 d-flex justify-content-end">
+            <div class="profile"><img src="../assets/images/avatarImg.jpg" alt="Error" class="d-inline" name="avatar">
+                <p class="bolder d-inline align-middle">Amanda</p>
+            </div>
+            <div class="d-inline n-icons">
+                <img src="../assets/images/Bell_Icon.svg" alt="Error" name="bell">
+            </div>
+            <div class="d-inline n-icons">
+                <img src="../assets/images/Messages_Icon.svg" alt="Error" name="messages">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div name="search" class="search2 container-fluid">
+    <div class="row">
+        <form action="Jobbyen-job_list.html" method="post" class="row d-flex align-items-center" name="mainS">
+            <div class="input align-self-center">
+                <input type="text" name="Keyword" placeholder="Keyword" class="d-flex align-self-center">
+                <img src="../assets/images/search2.svg" name="search" alt="Error">
+            </div>
+            <div class="input align-self-center">
+                <input type="text" name="Location" placeholder="Location" class="d-flex align-self-center">
+                <img src="../assets/images/location-pin.2.svg" name="loc_pin" alt="Error">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn_2 justify-content-center d-flex align-items-center align-self-center" name="button">Search now <div class="img position-relative d-flex align-items-center">
+                <i class="fas fa-angle-right position-absolute"></i>
+            </div></button>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid" name="job-search">
+    <div class="row d-flex justify-content-between">
+
+        <div class="" name="col_1">
+            <button type="submit" class="btn btn-success btn-lg d-flex justify-content-center" name="button">Create a
+                Job Agent
+            </button>
+            <button type="submit" class="btn btn-primary btn-lg d-flex justify-content-center" name="button">Upload CV
+            </button>
+            <div class="d-flex justify-content-between margin">
+                <p>Filters</p>
+                <p>Reset filters</p>
+            </div>
+            <div class="margin" name="active_filters">
+                <p>Latest Searches</p>
+                <p class="filter">UI Designer</p>
+                <p class="filter">Developer</p>
+                <p class="filter">Assistant</p>
+                <p class="filter">HTML</p>
+                <p class="filter">Financial Director</p>
+                <p class="filter">Graphic Designer</p>
+            </div>
+            <div class="margin" name="Job_Categories">
+                <div class="d-flex justify-content-between align-self-center ma-bot">
+                    <p class="bold">Job Categories</p>
+                    <img src="../assets/images/angle-down-3.svg" alt="Error" name="arrow-down">
+                </div>
+
+                <form class="" action="index.html" method="post">
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_1.1">IT Management</label><input type="checkbox" name="value_1.1" id="value_1.1">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_1.2">System Development</label><input type="checkbox" name="value_1.2" id="value_1.2">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_1.3">Medical and Provisions</label><input type="checkbox" name="value_1.3" id="value_1.3">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_1.4">Graphic Design</label><input type="checkbox" name="value_1.4" id="value_1.4">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_1.5">Artificial Intelligence</label><input type="checkbox" name="value_1.5" id="value_1.5">
+                    </div>
+                </form>
+            </div>
+            <div class="margin" name="Job_Type">
+                <div class="d-flex justify-content-between align-self-center ma-bot">
+                    <p class="bold">Job Type</p>
+                    <img src="../assets/images/angle-down-3.svg" alt="Error" name="arrow-down">
+                </div>
+
+                <form class="" action="index.html" method="post">
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_2.1">Full Time</label><input type="checkbox" name="value_2.1" id="value_2.1">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_2.2">Part Time</label><input type="checkbox" name="value_2.2" id="value_2.2">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_2.3">Freelance</label><input type="checkbox" name="value_2.3" id="value_2.3">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_2.4">Contract</label><input type="checkbox" name="value_2.4" id="value_2.4">
+                    </div>
+                </form>
+            </div>
+            <div class="margin" name="Region">
+                <div class="d-flex justify-content-between align-self-center ma-bot">
+                    <p class="bold">Region</p>
+                    <img src="../assets/images/angle-down-3.svg" alt="Error" name="arrow-down">
+                </div>
+
+                <form class="" action="index.html" method="post">
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_3.1">Brussels</label><input type="checkbox" name="value_3.1" id="value_3.1">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_3.2">Marrakesh</label><input type="checkbox" name="value_3.2" id="value_3.2">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_3.3">Bangkok</label><input type="checkbox" name="value_3.3" id="value_3.3">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_3.4">Silicon Valley</label><input type="checkbox" name="value_3.4" id="value_3.4">
+                    </div>
+                </form>
+            </div>
+            <div class="margin" name="Companies">
+                <div class="d-flex justify-content-between align-self-center ma-bot">
+                    <p class="bold">Companies</p>
+                    <img src="../assets/images/angle-down-3.svg" alt="Error" name="arrow-down">
+                </div>
+
+                <form class="" action="index.html" method="post">
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_4.1">Apple (12)</label><input type="checkbox" name="value_4.1" id="value_4.1">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_4.2">Microsoft (26)</label><input type="checkbox" name="value_4.2" id="value_4.2">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_4.3">Amazon (43)</label><input type="checkbox" name="value_4.3" id="value_4.3">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_4.4">Walmart (51)</label><input type="checkbox" name="value_4.4" id="value_4.4">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_4.5">Adobe (33)</label><input type="checkbox" name="value_4.5" id="value_4.5">
+                    </div>
+                    <div class="d-flex justify-content-between custom_font">
+                        <label for="value_4.6">Google (29)</label><input type="checkbox" name="value_4.6" id="value_4.6">
+                    </div>
+                </form>
+            </div>
+            <div class="margin position-relative" name="Impressed_Date">
+                <div class="position-relative">
+<!--                    <input type="range" class="custom-range" id="customRange1" min="0" max="31" value="0">-->
+<!--                    <div class="pasek" id="pasek"></div>-->
+<!--                    <p id="rangeLabel">test</p>-->
+                </div>
+                <div class="position-relative">
+
+                </div>
+            </div>
+        </div>
+        <div class="" name="col_2">
+            <div class="row d-flex justify-content-between filterS">
+                <p class="center">Results: 23 Jobs Finded</p>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary btn-custom_2 justify-content-between d-flex align-items-center align-self-center" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by:
+                        <div class="img position-relative drop d-flex align-items-center">
+                            <i class="fas fa-angle-right drop position-absolute"></i>
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Result_1 row">
+                <div class="circle" name="circle-icon_1">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="bolder">Job Categories</p>
+                        <p class="bold_2">Posted 5 minutes ago</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bolder">Company</p>
+                            <p class="bold_2">Slack HQ.</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Location</p>
+                            <p class="bold_2">Silicon Valley</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Job Type</p>
+                            <p class="bold_2">Freelance</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Salary</p>
+                            <p class="bold_2">$2500</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="bold_3">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero,
+                            vel malesuada velit. Nullam et maximus lorem. Suspendisse maximus dolor consequat volutpat…
+                            <span class="black hover">Read More</span></p>
+                    </div>
+                    <div class="row">
+                        <form class="job-res" action="index.html" method="post">
+                            <button type="submit" class="btn btn-primary btn-lg" name="button">Apply</button>
+                            <button type="submit" class="btn btn-custom btn-lg" name="button">Save Job</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Result_2 row">
+                <div class="circle" name="circle-icon_1">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="bolder">Job Categories</p>
+                        <p class="bold_2">Posted 5 minutes ago</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bolder">Company</p>
+                            <p class="bold_2">Slack HQ.</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Location</p>
+                            <p class="bold_2">Silicon Valley</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Job Type</p>
+                            <p class="bold_2">Freelance</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Salary</p>
+                            <p class="bold_2">$2500</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="bold_3">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero,
+                            vel malesuada velit. Nullam et maximus lorem. Suspendisse maximus dolor consequat volutpat…
+                            <span class="black hover">Read More</span></p>
+                    </div>
+                    <div class="row">
+                        <form class="job-res" action="index.html" method="post">
+                            <button type="submit" class="btn btn-primary btn-lg" name="button">Apply</button>
+                            <button type="submit" class="btn btn-custom btn-lg" name="button">Save Job</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Result_3 row">
+                <div class="circle" name="circle-icon_1">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="bolder">Job Categories</p>
+                        <p class="bold_2">Posted 5 minutes ago</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bolder">Company</p>
+                            <p class="bold_2">Slack HQ.</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Location</p>
+                            <p class="bold_2">Silicon Valley</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Job Type</p>
+                            <p class="bold_2">Freelance</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Salary</p>
+                            <p class="bold_2">$2500</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="bold_3">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero,
+                            vel malesuada velit. Nullam et maximus lorem. Suspendisse maximus dolor consequat volutpat…
+                            <span class="black hover">Read More</span></p>
+                    </div>
+                    <div class="row">
+                        <form class="job-res" action="index.html" method="post">
+                            <button type="submit" class="btn btn-primary btn-lg" name="button">Apply</button>
+                            <button type="submit" class="btn btn-custom btn-lg" name="button">Save Job</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Result_4 row">
+                <div class="circle" name="circle-icon_1">
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p class="bolder">Job Categories</p>
+                        <p class="bold_2">Posted 5 minutes ago</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="bolder">Company</p>
+                            <p class="bold_2">Slack HQ.</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Location</p>
+                            <p class="bold_2">Silicon Valley</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Job Type</p>
+                            <p class="bold_2">Freelance</p>
+                        </div>
+                        <div class="col">
+                            <p class="bolder">Salary</p>
+                            <p class="bold_2">$2500</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="bold_3">Praesent eu dolor eu orci vehicula euismod. Vivamus sed sollicitudin libero,
+                            vel malesuada velit. Nullam et maximus lorem. Suspendisse maximus dolor consequat volutpat…
+                            <span class="black hover">Read More</span></p>
+                    </div>
+                    <div class="row">
+                        <form class="job-res" action="index.html" method="post">
+                            <button type="submit" class="btn btn-primary btn-lg" name="button">Apply</button>
+                            <button type="submit" class="btn btn-custom btn-lg" name="button">Save Job</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div name="footer" class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center" name="table-footer">
+        <table class="table table-borderless" name="f-table">
+            <thead name="after">
+            <tr>
+                <td scope="col" colspan="4">
+                    <h1 name="margin">Looking for a job?</h1>
+                    <p name="font">Browse thousands of job offers and find the best suitable position.</p>
+                </td>
+                <td scope="col" class="d-flex justify-content-end"><button type="submit" class="btn btn-primary btn-lg btn_3" name="button">Get Started Now</button></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr name="no_bg">
+                <th scope="row"></th>
+            </tr>
+            <tr name="font">
+                <th scope="row" class="align-middle" colspan="2"><img src="../assets/images/Asset-1.svg" alt="Error" name="f-logo"></th>
+                <td class="align-middle">For job searchers</td>
+                <td class="align-middle">For Exployers</td>
+                <td class="align-middle">Website</td>
+            </tr>
+            <tr>
+                <td scope="row" class="align-middle" name="font_2" colspan="2"><img name="f-icon_1" src="../assets/images/mobile-android.svg" alt="Error">Phone: +1-000-000-0000</td>
+                <td class="align-middle" name="font_2">Create an account</td>
+                <td class="align-middle" name="font_2">Post a job</td>
+                <td class="align-middle" name="font_2">Contact</td>
+            </tr>
+            <tr>
+                <td scope=" row" class="align-middle" name="font_2" colspan="2"><img name="f-icon_2" src="../assets/images/at.svg" alt="Error">E:Mail: demo@gmail.com</td>
+                <td class="align-middle" name="font_2">Design your CV</td>
+                <td class="align-middle" name="font_2">Search resumes</td>
+                <td class="align-middle" name="font_2">Support</td>
+            </tr>
+            <tr>
+                <td scope=" row" class="align-middle" name="font" colspan="2"></td>
+                <td class="align-middle" name="font_2">Apply to a job</td>
+                <td class="align-middle" name="font_2">Advanced search</td>
+                <td class="align-middle" name="font_2">Blog</td>
+            </tr>
+            <tr name="margin">
+                <td scope=" row" class="align-middle" name="font" colspan="2"></td>
+                <td class="align-middle" name="font_2">Job searcher FAQ</td>
+                <td class="align-middle" name="font_2">Help</td>
+                <td class="align-middle" name="font_2">About</td>
+            </tr>
+            <tr name="no_bg">
+                <th scope="row"></th>
+            </tr>
+            </tbody>
+            <tfoot name="margin" class="b-top">
+            <tr>
+                <th class="align-middle" colspan="4">2019 © Jobbyen ApS. All rights reserved.</th>
+                <td class="align-middle d-flex justify-content-end"><img src="../assets/images/839f74c617fec9cf936a84b253202c60.svg" alt="Error" name="flag">
+                    <div class="dropdown">
+                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            English (US)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        <img src="../assets/images/facebook-f-1.svg" alt="Error" name="f-icon_3">
+                        <img src="../assets/images/instagram.svg" alt="Error" name="f-icon_4">
+                        <img src="../assets/images/twitter.svg" alt="Error" name="f-icon_5">
+                    </div>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+    // var rangeOne = document.getElementById("customRange1");
+    //
+    // function value() {
+    //     var labelR = document.getElementById("rangeLabel"),
+    //         rangeVal = rangeOne.value,
+    //         pasek = document.getElementById("pasek");
+    //
+    //
+    //     pasek.style.width = (rangeVal * 0.66) +"vw";
+    //     labelR.innerText = rangeVal;
+    // }
+    // rangeOne.addEventListener("mousemove", value);
+    // rangeOne.addEventListener("click", value);
+    // rangeOne.addEventListener("touchstart", value);
+    // rangeOne.addEventListener("touchmove", value);
+    // rangeOne.addEventListener("touchend", value);
+</script>
+<!--<script src="slider.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

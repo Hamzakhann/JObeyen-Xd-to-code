@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+    img[name=logo] {width: 13vw;}
+    div[name=start], div[name=search], div[name=recent_job], div[name=how_it_work], div[name=why], div[name=video], div[name=inter], div[name=firms], div[name=header], div[name=job-search], div[name=nav], div[name=job-description] {width: 90%;}
+    form[name=mainS] {width: 100%;padding: 0.7% 0;border-radius: 1.25vw;}
+    div.img {width: 2.20vw;height: 2.20vw; border-radius: 100%;background-color: white;margin-left: 0.52vw!important;}
+    .btn_1 {border-radius: 1vw;height: 6.5vw;width: 23vw;margin: auto 0 auto 1.04vw;font-size: 3.5vw}
+    .btn_2 {border-radius: 0.83vw;height: 7vw;width: 20%}
+    .btn_3 {border-radius: 1.04vw;height: 5vw;font-size: 1.8vw}
+    .text_holder button {width: 48%;}
+    .text_holder_1 h1 {font-size: 3.8vw;margin-bottom: 20px}
+    .text_holder_1 p {font-size: 1.8vw;color: #67798D;}
+    input[type=text] {height: 7vw;width: 100%;border: 0.36vw solid #E0E7F1;border-radius: 0.84vw;font-size: 2.5vw;}
+    input[type=text]::placeholder {font-size: 2.5vw;}
+    div[name=search] form div img[name=search] {width: 2.56vw}
+    div[name=search] form div img[name=loc_pin] {width: 1.88vw}
+    div[name=search] button {font-size: 2vw!important;}
+    .list-group-item {font-size: 2.2vw}
+    .job_holder {height: 6.5vw}
+    h1[name=after] {font-size: 3vw}
+    table {font-size: 1.4vw;}
+    table button {font-size: 1.15vw!important;}
+    div[name=table-job] button {height: 3.4vw;width: 11vw!important;}
+    button[name=see_more] {margin: 1.67vw auto 0 auto;width: 15vw;height: 5vw;border-radius: 0.84vw;font-size: 1.8vw}
+    .m-100 {margin-bottom: 6vw;}
+    div[name=examp_1], div[name=examp_2], div[name=examp_3] {height: 32vw;width: 28vw;}
+    img[name=examp_1] {width: 3.76vw;height: 3.76vw}
+    img[name=examp_2] {width: 3.50vw;height: 3.81vw}
+    img[name=examp_3] {width: 3.81vw;height: 3.81vw}
+    div[name=examp_1] p.h1, div[name=examp_2] p.h1, div[name=examp_3] p.h1 {margin: 1.8vw 0 0 11.5%; font-size: 2.7vw}
+    p[name=capped] {width: 21vw; margin: 0.63vw 0 0 11.5%;font-size: 1.7vw}
+    div[name=capped] {margin: 0.73vw 0 0 11.5%;font-size: 1.7vw}
+    .text_holder_2 .p{font-size: 2vw;color: #3B83FC !important;margin-bottom: 6px !important;}
+    .text_holder_2 .h1{font-size: 2.7vw;color: #2E3748 !important;margin-bottom: 2.29vw;position: relative;}
+    .text_holder_2 .uH1{font-size: 1.8vw;}
+    h1[name=after]::after {content: "";bottom: -3vw;}
+    p[name=after]::after {content: "";bottom: -1.56vw}
+    div[name=firm_1] {left:5.21vw;}
+    div[name=firm_2] {left:12.85vw;}
+    div[name=firm_3] {left:19.58vw;}
+    div[name=firm_4] {left:27.83vw;}
+    div[name=firm_5] {left:35.04vw;}
+    div[name=firm_6] {left:41.69vw;}
+    div[name=table-footer] {width: 90%;}
+    table[name=f-table] button {width: 14vw;}
+    table[name=f-table] * {font-size: 1.5vw;}
+    img[name=flag] {width: 2.25vw;}
+    .b-top * {font-size: 1.5vw}
+    img[name=f-logo] {width: 6.7vw;}
+    img[name=f-icon_1] {height: 1.99vw;margin-right: 1.59vw}
+    img[name=f-icon_2] {height: 1.89vw;margin-right: 1.59vw}
+    img[name=f-icon_3] {height: 1.5vw;margin-left: 1.04vw;margin-right: 0.89vw}
+    img[name=f-icon_4] {height: 1.5vw;margin-right: 0.63vw}
+    img[name=f-icon_5] {height: 1.5vw;}
+
+
+        /* HACK:job_list  */
+
+
+    .bold {font-size: 0.99vw;font-weight: bold;color: #313636;margin-bottom: 0}
+    .bolder {font-size: 1.4vw;font-weight: bolder;color: #313636;width: 100%;margin: 0;margin-left: 1.04vw}
+    .bold_2 {font-size: 1.4vw;font-weight: bold;color: #67798D;width: 100%;margin-left: 1.04vw}
+    .bold_3 {font-size: 0.73vw;font-weight: bold;color: #67798D;width: 100%;margin-left: 1.04vw}
+    .custom_font {font-size: 1.4vw;color: #313636;margin-bottom: 0.47vw}
+    div[name=col_1] {width: 40%;margin: 1.25vw 0 0 1.25vw}
+    p.center {margin: auto 0 auto 0;font-size: 1.4vw}
+    .margin p {font-size: 1.4vw}
+
+
+
+}

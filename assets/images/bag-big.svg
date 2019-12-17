@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="223" height="202.2" viewBox="0 0 223 202.2">
+    <defs>
+        <style>
+            .cls-1{fill:#dde4e4}.cls-2{filter:url(#bag)}
+        </style>
+        <filter id="bag" width="223" height="202.2" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="2.5"/>
+            <feFlood flood-opacity=".071"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g class="cls-2">
+        <path id="bag-2" d="M178.8 34.2h-31.2V23.8A20.8 20.8 0 0 0 126.8 3H85.2a20.8 20.8 0 0 0-20.8 20.8v10.4H33.2A31.2 31.2 0 0 0 2 65.4V159a31.2 31.2 0 0 0 31.2 31.2h145.6A31.2 31.2 0 0 0 210 159V65.4a31.2 31.2 0 0 0-31.2-31.2zM85.2 23.8h41.6v10.4H85.2zm104 135.2a10.4 10.4 0 0 1-10.4 10.4H33.2A10.4 10.4 0 0 1 22.8 159v-58.344L71.472 117.4a12.375 12.375 0 0 0 3.328 0h62.4a12.376 12.376 0 0 0 3.328-.52l48.672-16.224zm0-80.288L135.536 96.6H76.464L22.8 78.712V65.4A10.4 10.4 0 0 1 33.2 55h145.6a10.4 10.4 0 0 1 10.4 10.4z" class="cls-1" data-name="bag" transform="translate(5.5 -.5)"/>
+    </g>
+</svg>

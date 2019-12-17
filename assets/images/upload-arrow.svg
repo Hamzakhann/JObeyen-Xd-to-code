@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130.973" height="143.524" viewBox="0 0 130.973 143.524">
+    <defs>
+        <style>
+            .cls-1{opacity:.36}.cls-2{fill:#313636;fill-rule:evenodd}.cls-3{filter:url(#Path_406)}
+        </style>
+        <filter id="Path_406" width="130.973" height="143.524" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".38"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="upload-arrow" class="cls-1">
+        <g class="cls-3" transform="translate(-.003)">
+            <path id="Path_406-2" d="M126.352 114.622a10.371 10.371 0 0 0-10.293-10.022h-92.3a10.461 10.461 0 0 0 0 20.921h92.3a10.371 10.371 0 0 0 10.292-10.014c.007-.151.045-.293.045-.446s-.038-.289-.044-.439zM44.206 51.339L59.5 36.024v49.752a10.476 10.476 0 0 0 20.952 0V36.024l15.293 15.315a10.625 10.625 0 0 0 15.024-15.028L77.635 3.131a10.536 10.536 0 0 0-6.8-3.044C70.547.063 70.27 0 69.975 0s-.569.063-.857.086a10.536 10.536 0 0 0-6.8 3.045l-33.136 33.18a10.625 10.625 0 1 0 15.024 15.028z" class="cls-2" data-name="Path 406" transform="translate(-4.42 6)"/>
+        </g>
+    </g>
+</svg>

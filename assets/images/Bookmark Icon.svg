@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.771" height="25.392" viewBox="0 0 17.771 25.392">
+    <defs>
+        <style>
+            .cls-1{fill:#3b83fc}
+        </style>
+    </defs>
+    <path id="Bookmark_Icon" d="M18.963 2H8.808A3.808 3.808 0 0 0 5 5.808v20.309a1.269 1.269 0 0 0 1.9 1.1l6.981-4.036 6.981 4.036a1.269 1.269 0 0 0 1.9-1.1V5.808A3.808 3.808 0 0 0 18.963 2zm1.269 21.921l-5.712-3.3a1.269 1.269 0 0 0-1.269 0l-5.712 3.3V5.808a1.269 1.269 0 0 1 1.269-1.269h10.155a1.269 1.269 0 0 1 1.269 1.269z" class="cls-1" data-name="Bookmark Icon" transform="translate(-5 -2)"/>
+</svg>

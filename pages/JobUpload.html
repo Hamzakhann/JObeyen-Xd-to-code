@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/styles/master2.css" />
+    <link rel="stylesheet" href="../assets/styles/masterMobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Jobbyen</title>
+  </head>
+
+  <body>
+      <div class="container-fluid" name="header">
+          <div class="row">
+            <div name="logo" class="col">
+              <img
+                src="../assets/images/Asset-1.svg"
+                alt="Error"
+                name="logo"
+                class="d-inline"
+              />
+              <p class="bolder d-inline">Find Job</p>
+              <p class="bolder d-inline">Find Resume</p>
+              <p class="bolder d-inline">What’new?</p>
+            </div>
+            <div name="log_but" class="col d-flex justify-content-end">
+              <div class="profile">
+                <img
+                  src="../assets/images/avatarImg.jpg"
+                  alt="Error"
+                  class="d-inline"
+                  name="avatar"
+                />
+                <p class="bolder d-inline align-middle">Amanda</p>
+              </div>
+              <div class="d-inline n-icons">
+                <img src="../assets/images/Bell_Icon.svg" alt="Error" name="bell" />
+              </div>
+              <div class="d-inline n-icons">
+                <img
+                  src="../assets/images/Messages_Icon.svg"
+                  alt="Error"
+                  name="messages"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div name="nav" class="container-fluid">
+          <div class="nav-loc">
+            <div class="nav-back d-inline-block">
+              <div class="nav-parts d-inline-block">
+                <img
+                  src="../assets/images/Home_Icon.svg"
+                  alt="Error"
+                  name="home"
+                  class="d-inline-block"
+                />
+                <img
+                  src="../assets/images/Right.svg"
+                  alt="Error"
+                  name="r-arrow"
+                  class="d-inline-block"
+                />
+              </div>
+              <div class="nav-parts d-inline-block">
+                <p class="d-inline-block cent grey">Jobs</p>
+                <img
+                  src="../assets/images/Right.svg"
+                  alt="Error"
+                  name="r-arrow"
+                  class="d-inline-block"
+                />
+              </div>
+            </div>
+
+            <div class="nav-parts d-inline-block" name="b-after">
+              <p class="d-inline-block cent">UI / UX Designer</p>
+            </div>
+          </div>
+        </div>
+      <div class="container" >
+        <div class="row" >
+          <div class="col-sm col-md-9" >
+            <div class="container-fluid job-detail-left-container " >
+              <div class="job-detail" >
+                <p>Job Details</p>
+              </div>
+              <br/>
+              <br/>
+              <div class="row" >
+                <div class="col-sm col-md-7 col-md-pull-5" >
+                  <form class="was-validated" >
+                    <div class="form-group" >
+                      <label for="job-title" class="input-label ml-3" >
+                        Job Title
+                      </label>
+                      <input type="text" class="form-control" id="job-title" placeholder="Enter Job Title" value="System Menager needed in Cropdown Solution" name="job-title" required />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <br/>
+              <br/>
+              <div class="row" >
+                <div class="col-sm col-md-7 col-md-pull-5">
+                  <label for="j-url" class="input-label ml-3" >
+                    Job URL
+                  </label>
+                  <input type="text" class="form-control" id="j-url" placeholder="Type Job URL" value="//System/Menager/6875646" />
+                </div>
+              </div>
+              <br/>
+              <br/>
+              <div class="row" >
+                  <div class="col-sm col-md-7 col-md-pull-5">
+                    <label for="com-name" class="input-label ml-3" >
+                      Company Name
+                    </label>
+                    <input type="text" class="form-control" id="com-name" placeholder="Type Company Name" value="Cropdown  Solution" />
+                  </div>
+                </div>
+                <br/>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-pull-6 ml-3">
+                      <form>
+                          <small class="input-label  d-block" >
+                              Job type
+                          </small>
+                        <div
+                          class="custom-control custom-radio custom-control-inline "
+                        >
+                          <input
+                            type="radio"
+                            class="custom-control-input mr-3"
+                            id="full-time"
+                            name="Full Time"
+                            value="Full Time"
+                          />
+                          <label
+                            class="custom-control-label input-label"
+                            for="full-time"
+                            >Full Time</label
+                          >
+                        </div>
+
+                        <div
+                          class="custom-control custom-radio custom-control-inline ml-3"
+                        >
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="part-time"
+                            name="Part Time"
+                            value="Part Time"
+                          />
+                          <label
+                            class="custom-control-label input-label"
+                            for="part-time"
+                            >Part Time</label
+                          >
+                        </div>
+                        <div
+                        class="custom-control custom-radio custom-control-inline "
+                      >
+                        <input
+                          type="radio"
+                          class="custom-control-input mr-3"
+                          id="freelance"
+                          name="Freelance"
+                          value="Freelance"
+                        />
+                        <label
+                          class="custom-control-label input-label"
+                          for="freelance"
+                          >Freelance</label
+                        >
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="row">
+                      <div class="col-md-6 col-md-pull-6 ">
+                        <span class="input-label ml-2">Job Category</span>
+                        <div class="select-style-job-category">
+                          <select>
+                            <option value="job-category">Select Job Category</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <br/>
+                    <br/>
+
+              <div class="row">
+                  <div class="col-md-6 col-md-pull-6 ">
+                    <div class="form-group">
+                      <label for="j-loc" class="input-label ml-3"
+                        >Location</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control shadow-text-input"
+                        id="j-loc"
+                        placeholder="Type Location"
+                        name="j-loc"
+                      />
+
+                      <div
+                        class="custom-control custom-radio custom-control-inline ml-3"
+                      >
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="customRadio3"
+                          name="Location"
+                          value="Location"
+                        />
+                        <label class="custom-control-label " for="customRadio3"
+                          >Use Current Location</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+
+                <div class="row" >
+                    <div class="col-sm col-md-6 col-md-pull-6">
+                      <label for="j-education" class="input-label ml-3" >
+                        Education
+                      </label>
+                      <input type="text" class="form-control" id="j-education" placeholder="Vocational Education" />
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="row">
+                      <div class="col-md-6 col-md-pull-6 ">
+                        <span class="input-label ml-3">Years of Experience</span>
+                        <div class="d-flex ml-5">
+                          <div class="select-style-salary">
+                            <select>
+                              <option value="from">From</option>
+                            </select>
+                          </div>
+
+                          <div class="select-style-salary ml-2">
+                            <select>
+                              <option value="to">To</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                     <br/>
+                     <br/>
+                     <div class="row">
+                        <div class="col-md-10 col-md-pull-2 ">
+                          <span class="input-label ml-3">Job Description  </span>
+                          <div class="about-me">
+                            <div class="edit-options-container ">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-secondary">
+                                  <i class="fas fa-bold"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm ">
+                                  <i class="fas fa-italic"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm ">
+                                  <i class="fas fa-underline"></i>
+                                </button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_align_left-24px.svg"
+                                    class="img img-fluid"
+                                    alt="error"
+                                  />
+                                </button>
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_align_center-24px.svg"
+                                    alt="error"
+                                    class="img img-fluid"
+                                  />
+                                </button>
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_align_justify-24px.svg"
+                                    class="img img-fluid"
+                                    alt="error"
+                                  />
+                                </button>
+
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_align_right-24px.svg"
+                                    class="img img-fluid"
+                                    alt="error"
+                                  />
+                                </button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_indent_decrease-24px.svg"
+                                    class="img img-fluid"
+                                    alt="error"
+                                  />
+                                </button>
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                  src="../assets/images/baseline-format_list_bulleted-24px.svg"
+                                    alt="error"
+                                    class="img img-fluid"
+                                  />
+                                </button>
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_list_numbered-24px.svg"
+                                    class="img img-fluid"
+                                    alt="error"
+                                  />
+                                </button>
+
+                                <button type="button" class="btn btn-sm ">
+                                  <img
+                                    src="../assets/images/baseline-format_align_right-24px.svg"
+                                    class="img img-fluid"
+                                    alt="error"
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                            <textarea class="text-editor" rows="5"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <br/>
+                      <br/>
+                      <div class="row">
+                          <div class="col-md-6 col-md-pull-6 ">
+                            <div class="form-group">
+                              <label for="j-wishes" class="input-label ml-3"
+                                > Required Skills</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control shadow-text-input"
+                                id="j-wishes"
+                                placeholder="Type Your Skills"
+                                name="j-wishes"
+                              />
+                            </div>
+                            <div class="suggession-container" >
+                                <div class="row">
+                                  <div class="col-md-2">
+                                        <div class="float-left" >
+                                          <p class="suggession" >Suggestions:</p>
+                                        </div>
+                                  </div>
+
+                                  <div class="col-md-10">
+                                        <div class="float-right ml-4" >
+                                          <span class="suggession-list" >Web Developer <i class="ml-2 fas fa-times"></i></span>
+                                          <span class="suggession-list" >Web Developer<i class="ml-2 fas fa-times"></i></span>
+                                          <span class="suggession-list">Web Developer<i class="ml-2 fas fa-times"></i></span>
+                                        </div>
+                                  </div>
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-6 col-md-pull-6 ">
+                              <span class="input-label ml-3">Salary Range</span>
+                              <div class="d-flex ml-5">
+                                <div class="select-style-salary">
+                                  <select>
+                                    <option value="from">From</option>
+                                  </select>
+                                </div>
+
+                                <div class="select-style-salary ml-2">
+                                  <select>
+                                    <option value="to">To</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                           </div>
+                           <br/>
+                           <div class="row" >
+                             <div class="col-sm col-md-6 col-md-pull-6" >
+                              <div
+                                class="custom-control custom-radio custom-control-inline ml-5"
+                              >
+                                <input
+                                  type="radio"
+                                  class="custom-control-input mr-3"
+                                  id="Negotiable"
+                                  name="Negotiable"
+                                  value="Negotiable"
+                                />
+                                <label
+                                  class="custom-control-label input-label"
+                                  for="Negotiable"
+                                  >Negotiable</label
+                                >
+                              </div>
+                             </div>
+                           </div>
+
+
+            </div>
+            <div class="container-fluid text-center" >
+              <button class="btn btn-success btn-upload-job" >Upload Job</button>
+            </div>
+          </div>
+          <div class="col-sm col-md-3 job-upload-right-div" >
+              <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm col-md-12">
+                        <small class="input-label ml-3 ">Upload Logo Image</small>
+                        <div class="upload-cv-file" >
+                          <img src="../assets/images/upload-arrow.svg"  class="img img-fluid" />
+                          <p class="drag-text" >
+                              Drag & drop
+                              or browse files
+                          </p>
+                        </div>
+                        <ul class="file-upload-des" >
+                          <li >- Use min 500px * 500px resoluiton for upload</li>
+                           <li> - Use high quality pictures without blury pixels!</li>
+                           <li>- Use simple pictures with one color background!</li>
+                        </ul>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row" >
+                    <div class="col-sm col-md-12" >
+                        <small class="input-label ml-2 ">Upload Job
+                            Description File</small>
+                        <div class="upload-cv-file" >
+                          <img src="../assets/images/upload-arrow.svg"  class="img img-fluid" />
+                          <p class="drag-text" >
+                              Drag & drop
+                              or browse files
+                          </p>
+                        </div>
+                        <ul class="file-upload-des" >
+                            <li >- Allowed files (PDF and Word).</li>
+                             <li> - Maximum file size 30mb.</li>
+
+                          </ul>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+<div name="footer" class="container-fluid">
+    <div class="row justify-content-sm-center" name="table-footer">
+        <table class="table table-borderless" name="f-table">
+            <thead name="after">
+            <tr>
+                <td scope="col" colspan="4">
+                    <h1 name="margin">Looking for a job?</h1>
+                    <p name="font">Browse thousands of job offers and find the best suitable position.</p>
+                </td>
+                <td scope="col">
+                    <button type="submit" class="btn btn-primary btn-lg" name="button">Get Started Now</button>
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr name="no_bg">
+                <th scope="row"></th>
+            </tr>
+            <tr name="font">
+                <th scope="row" class="align-middle"><img src="../assets/images/Asset-1.svg" alt="Error" name="f-logo">
+                </th>
+                <td class="align-middle">For job searchers</td>
+                <td class="align-middle">For Exployers</td>
+                <td class="align-middle">Website</td>
+            </tr>
+            <tr>
+                <td scope="row" class="align-middle" name="font"><img name="f-icon_1"
+                                                                      src="../assets/images/mobile-android.svg"
+                                                                      alt="Error">Phone: +1-000-000-0000
+                </td>
+                <td class="align-middle" name="font">Create an account</td>
+                <td class="align-middle" name="font">Post a job</td>
+                <td class="align-middle" name="font">Contact</td>
+            </tr>
+            <tr>
+                <td scope=" row" class="align-middle" name="font"><img name="f-icon_2" src="../assets/images/at.svg"
+                                                                       alt="Error">E:Mail: demo@gmail.com
+                </td>
+                <td class="align-middle" name="font">Design your CV</td>
+                <td class="align-middle" name="font">Search resumes</td>
+                <td class="align-middle" name="font">Support</td>
+            </tr>
+            <tr>
+                <th scope=" row" class="align-middle" name="font"></th>
+                <td class="align-middle" name="font">Apply to a job</td>
+                <td class="align-middle" name="font">Advanced search</td>
+                <td class="align-middle" name="font">Blog</td>
+            </tr>
+            <tr name="margin">
+                <th scope=" row" class="align-middle" name="font"></th>
+                <td class="align-middle" name="font">Job searcher FAQ</td>
+                <td class="align-middle" name="font">Help</td>
+                <td class="align-middle" name="font">About</td>
+            </tr>
+            <tr name="no_bg">
+                <th scope="row"></th>
+            </tr>
+            </tbody>
+            <tfoot name="margin" class="b-top">
+            <tr>
+                <th colspan="4">2019 © Jobbyen ApS. All rights reserved.</th>
+                <td><img src="../assets/images/839f74c617fec9cf936a84b253202c60.svg" alt="Error" name="flag">
+                    <div class="dropdown">
+                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            English (US)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        <img src="../assets/images/facebook-f-1.svg" alt="Error" name="f-icon_3">
+                        <img src="../assets/images/instagram.svg" alt="Error" name="f-icon_4">
+                        <img src="../assets/images/twitter.svg" alt="Error" name="f-icon_5">
+                    </div>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+  </body>
+</html>

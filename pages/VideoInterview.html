@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/styles/master.css" />
+    <link rel="stylesheet" href="../assets/styles/masterMobile.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <title>Jobbyen</title>
+  </head>
+
+  <body>
+    <div class="container-fluid" name="header">
+      <div class="row">
+        <div name="logo" class="col">
+          <img
+            src="../assets/images/Asset-1.svg"
+            alt="Error"
+            name="logo"
+            class="d-inline"
+          /><span class="badge badge-danger ml-2 ">Live</span>
+          <p class="bolder d-inline">Find Job</p>
+          <p class="bolder d-inline">Find Resume</p>
+          <p class="bolder d-inline">What’new?</p>
+        </div>
+        <div name="log_but" class="col d-flex justify-content-end">
+          <div class="d-inline n-icons">
+            <img
+              width="20px"
+              height="22px"
+              src="../assets/images/search_icon.svg"
+              alt="Error"
+              name="search"
+            />
+          </div>
+          <div class="d-inline n-icons">
+            <img src="../assets/images/Bell_Icon.svg" alt="Error" name="bell" />
+            <span class="indicator"></span>
+          </div>
+          <div class="d-inline n-icons">
+            <img
+              src="../assets/images/Messages_Icon.svg"
+              alt="Error"
+              name="message"
+            /><span class="indicator"></span>
+          </div>
+          <div class="profile">
+            <p class="bolder d-inline align-middle">Amanda</p>
+            <img
+              src="../assets/images/avatarImg.jpg"
+              alt="Error"
+              class="d-inline"
+              name="avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm col-md-8 p-2">
+          <div class="video-container">
+            <div class="video-container-header">
+              <div class="video-header-person ">
+                <div class="float-left">
+                  <img
+                    src="../assets/images/Person.png"
+                    class="video-person"
+                  /><span class="video-person-online"></span>
+                </div>
+                <div class="float-left ml-2">
+                  <p class="video-person-name m-0">Marry Young</p>
+                  <p>Software Depeloper</p>
+                </div>
+              </div>
+              <div class="video-header-options">
+                <img
+                  src="../assets/images/Fullscreen.svg"
+                  alt="Error"
+                  name="full screen"
+                  class="mr-3"
+                />
+                <img
+                  src="../assets/images/More_Buton.svg"
+                  alt="Error"
+                  name="more buttons"
+                />
+              </div>
+            </div>
+            <div class="video-img-container">
+              <video width="100%" height="100%" poster="../assets/images/Her.jpg">
+                <source src="movie.mp4" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-bottom-container">
+              <div>
+                <img class="Me" src="../assets/images/Me.png" alt="Error" name ="me" />
+              </div>
+              <div class="video-bottom-icons-container" >
+                  <span class="blur-icon mr-1">
+                      <img
+                        class="mt-1"
+                        src="../assets/images/Microphone_Icon.svg"
+                        alt="Error"
+                        name="microphone"
+                      />
+                    </span>
+                    <span class="blur-icon mr-1">
+                      <img
+                      class="mt-1"
+                        src="../assets/images/Video_Icon.svg"
+                        alt="Error"
+                        name="video icon"
+                      />
+                    </span>
+                    <span class="call-end-icon mr-1">
+                      <img
+                      class="mt-1"
+                        src="../assets/images/End_Call_Icon.svg"
+                        alt="Error"
+                        name="end call icon"
+                      />
+                    </span>
+              </div>
+              <div class="video-msg-container">
+                  <span class="blur-icon mr-2 mt-3">
+                      <img
+                      class="mt-1"
+                        src="../assets/images/Message_Icon.svg"
+                        alt="Error"
+                        name="video icon"
+                      />
+                    </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm col-md-4">
+          <h2 class="Interviewers-3">Interviewers (3)</h2>
+          <div class="interviewers-list-container">
+            <div class="interviewer-search-container">
+              <span class="mt-3 mr-2 search-around">
+                <img
+                  src="../assets/images/search_icon.svg"
+                  height="18px"
+                  width="18px"
+                  alt="error"
+                  name="interview search"
+                />
+              </span>
+              <input
+                type="text"
+                placeholder="Search...."
+                id="interview-search"
+              />
+              <span class="mt-3 search-around">
+                <img
+                  height="18px"
+                  width="18px"
+                  src="../assets/images/More_Buton.svg"
+                  alt="error"
+                  name="interview search"
+                />
+              </span>
+            </div>
+            <ul class="list-group interviewer-list-group ">
+              <li class="mt-3">
+                <div  >
+                  <div class="float-left">
+                    <img
+                      src="../assets/images/Person.png"
+                      class="video-person"
+                    /><span class="video-person-online"></span>
+                  </div>
+                  <div class="float-left video-person-div ">
+                    <p class="video-person-name mb-0">Marry Young</p>
+                    <div class="sm-text ml-2" >
+                      <small class="float-left" >Developer</small> <small class="float-right" >Today</small>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+                <br/>
+                <button class="btn btn-interview-now btn-block  ">
+                  Interviewing Now
+                </button>
+              </li>
+              <li class="mt-3">
+                <div>
+                  <div class="float-left">
+                    <img src="../assets/images/Person.png" class="video-person" />
+                  </div>
+                  <div class="float-left  video-person-div">
+                    <p class="video-person-name mb-0">Megan Cooper</p>
+                    <div class="sm-text ml-2" >
+                        <small class="float-left" >Developer</small> <small class="float-right" >Today</small>
+                      </div>
+                  </div>
+                </div>
+                <br/>
+                <br/>
+                <button class="btn btn-interview-remain btn-block">
+                  <img
+                    src="../assets/images/clock-nine.svg"
+                    alt="Error"
+                    name="clock-nine"
+                  />
+                  22h | 14m | 32s
+                </button>
+              </li>
+              <li class="mt-3">
+                <div>
+                  <div class="float-left ">
+                    <img src="../assets/images/Person.png" class="video-person" />
+                  </div>
+                  <div class="float-left video-person-div">
+                    <p class="video-person-name mb-0">Patrick Oliver</p>
+                    <div class="sm-text ml-2" >
+                        <small class="float-left" >Developer</small> <small class="float-right" >Today</small>
+                      </div>
+                  </div>
+                </div>
+                <br/>
+                <br/>
+                <button class="btn btn-interview-remain btn-block ">
+                  <img
+                    src="../assets/images/clock-nine.svg"
+                    alt="Error"
+                    name="clock-nine"
+                  />
+                  22h | 14m | 32s
+                </button>
+              </li>
+              <li class="mt-3 opac">
+                <div class="mb-2">
+                  <div class="float-left ">
+                    <img src="../assets/images/Person.png" class="video-person" />
+                  </div>
+                  <div class="float-left video-person-div">
+                    <p class="video-person-name mb-0">Roy Coleman</p>
+                    <div class="sm-text ml-2" >
+                        <small class="float-left" >Developer</small> <small class="float-right" >Today</small>
+                      </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER START -->
+    <div name="footer" class="container-fluid">
+      <div class="row justify-content-sm-center" name="table-footer">
+        <table class="table table-borderless" name="f-table">
+          <thead name="after">
+            <tr>
+              <td scope="col" colspan="4">
+                <h1 name="margin">Looking for a job?</h1>
+                <p name="font">
+                  Browse thousands of job offers and find the best suitable
+                  position.
+                </p>
+              </td>
+              <td scope="col">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg"
+                  name="button"
+                >
+                  Get Started Now
+                </button>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr name="no_bg">
+              <th scope="row"></th>
+            </tr>
+            <tr name="font">
+              <th scope="row" class="align-middle">
+                <img
+                  src="../assets/images/Asset-1.svg"
+                  alt="Error"
+                  name="f-logo"
+                />
+              </th>
+              <td class="align-middle">For job searchers</td>
+              <td class="align-middle">For Exployers</td>
+              <td class="align-middle">Website</td>
+            </tr>
+            <tr>
+              <td scope="row" class="align-middle" name="font">
+                <img
+                  name="f-icon_1"
+                  src="../assets/images/mobile-android.svg"
+                  alt="Error"
+                />Phone: +1-000-000-0000
+              </td>
+              <td class="align-middle" name="font">Create an account</td>
+              <td class="align-middle" name="font">Post a job</td>
+              <td class="align-middle" name="font">Contact</td>
+            </tr>
+            <tr>
+              <td scope=" row" class="align-middle" name="font">
+                <img
+                  name="f-icon_2"
+                  src="../assets/images/at.svg"
+                  alt="Error"
+                />E:Mail: demo@gmail.com
+              </td>
+              <td class="align-middle" name="font">Design your CV</td>
+              <td class="align-middle" name="font">Search resumes</td>
+              <td class="align-middle" name="font">Support</td>
+            </tr>
+            <tr>
+              <th scope=" row" class="align-middle" name="font"></th>
+              <td class="align-middle" name="font">Apply to a job</td>
+              <td class="align-middle" name="font">Advanced search</td>
+              <td class="align-middle" name="font">Blog</td>
+            </tr>
+            <tr name="margin">
+              <th scope=" row" class="align-middle" name="font"></th>
+              <td class="align-middle" name="font">Job searcher FAQ</td>
+              <td class="align-middle" name="font">Help</td>
+              <td class="align-middle" name="font">About</td>
+            </tr>
+            <tr name="no_bg">
+              <th scope="row"></th>
+            </tr>
+          </tbody>
+          <tfoot name="margin" class="b-top">
+            <tr>
+              <th colspan="4">2019 © Jobbyen ApS. All rights reserved.</th>
+              <td>
+                <img
+                  src="../assets/images/839f74c617fec9cf936a84b253202c60.svg"
+                  alt="Error"
+                  name="flag"
+                />
+                <div class="dropdown">
+                  <a
+                    class="btn btn-sm dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    English (US)
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                  <img
+                    src="../assets/images/facebook-f-1.svg"
+                    alt="Error"
+                    name="f-icon_3"
+                  />
+                  <img
+                    src="../assets/images/instagram.svg"
+                    alt="Error"
+                    name="f-icon_4"
+                  />
+                  <img
+                    src="../assets/images/twitter.svg"
+                    alt="Error"
+                    name="f-icon_5"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- FOOTER END-->
+    </div>
+    <script>ScrollReveal().reveal('.container', { delay: 200 });</script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

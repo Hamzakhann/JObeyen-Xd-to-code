@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="43.2" viewBox="0 0 48 43.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <path id="adobe" class="cls-1" d="M18.968,37.272H25.64l4.2,8.256h6.1L26,19.488ZM2,3V46.2L19.808,3ZM31.952,3,50,45.744V3Z" transform="translate(-2 -3)"/>
+</svg>

@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en">
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    
+        <!-- Stylesheet -->
+    <link rel="stylesheet" href="/path/to/bootstrap.min.css">
+    <link rel="stylesheet" href="/path/to/bootstrap-select.min.css">
+
+    <!-- JavaScript -->
+    <script src="/path/to/jquery.min.js"></script>
+    <script src="/path/to/bootstrap.min.js"></script>
+    <script src="/path/to/bootstrap-select.min.js"></script>
+    <script src="js/countrypicker.js"></script>
+
+    
+    
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"/>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>           
+    <title>Jobbyen</title>            
+    <meta name="description" content="#">            
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="dist/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="dist/css/swipe.min.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>    
+    <link href="dist/img/favicon.png" type="image/png" rel="icon">    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
+    <!-- Map -->
+    <link href='../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+    
+            $("select.country").change(function(){
+        
+                var selectedCountry = $(".country option:selected").val();
+        
+                $.ajax({
+            
+                    type: "POST",
+            
+                    url: "/examples/php/process-request.php",
+            
+                    data: { country : selectedCountry } 
+        
+                }).done(function(data){
+            
+                    $("#response").html(data);
+        
+                });
+    
+            });
+
+        });
+
+    </script>
+  
+    </head>
+    
+ <!-- NAVBAR
+    ================================================== -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white" class="col-sm-12">
+      <div class="container">
+
+           <!-- Brand -->
+        
+          <a class="navbar-brand" href="#">
+          
+              <img src="dist/img/logo.PNG" class="navbar-brand-img" alt="...">
+        
+          </a>
+
+        <!-- Toggler -->
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          
+              <span class="navbar-toggler-icon"></span>
+        
+          </button>
+    
+        
+          <!-- Collapse -->
+        
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          
+              <!-- Toggler -->
+          
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            
+                  <i class="fe fe-x"></i>
+          
+              </button>
+
+              
+          <!-- Navigation -->
+          
+              <ul class="navbar-nav ml-auto">
+            
+                  <li class="nav-item dropdown">
+              
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Find job
+              
+                      </a>
+             
+        
+                  </li>
+            
+                  <li class="nav-item dropdown">
+              
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                          Find Resume
+            
+                      </a>
+              
+            
+                  </li>
+            
+                  <li class="nav-item dropdown">
+              
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                          What's new?
+              
+                      </a>
+            
+            
+                  </li>
+          
+              </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          
+              <!-- Button -->
+         
+              <div>
+         
+              </div>
+            
+          
+               <img src="Jobbyen_assets/Bell_Icon.svg" alt="Error" name="bell" />&nbsp;&nbsp;&nbsp;
+                
+              <img
+              src="Jobbyen_assets/Messages_Icon.svg"alt="Error"name="message"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="font-size:12px;"></p>
+             
+              
+              <div class="profile">
+            
+                  <p class="bolder d-inline align-middle">Keith Morris</p>
+            
+                  <img src="dist/img/avatars/avatar-female-5.PNG" alt="Error" class="d-inline"
+                    style="width:30px; height:30px; border-radius:50px;"/>
+          
+              </div>
+ 
+      
+          </div>
+      
+          </nav>
+    
+
+    
+    <!---------------------------------------------
+      --------------------------------------------->   
+    
+      <main>
+            
+                  <!--- sidebar-->
+                   
+
+                   <div class="layout">
+                                               
+                       <!-- main -->
+        
+                       <!-- chat room-->
+
+                       <div class="main" style="margin-left:150px;">
+
+                           <div class="tab-content" id="nav-tabContent" >
+
+
+                               <div class="babble tab-pane fade active show" id="list-chat" role="tabpanel" aria-labelledby="list-chat-list">
+                                   
+                            
+                                   <div class="chat" id="chat1">
+
+                                           <div class="top">
+
+                                           
+                                               <div class="container">
+
+                                               
+                                                <div class="col-md-12">
+                                                
+                                                
+                                                       <hr>
+
+                                                   
+                                                       <div class="inside" >
+                                          
+                                                      
+                                                
+                                                   
+                                                           <div class="filterDiscussions all unread single active" id="list-chat-list" data-toggle="list" role="tab">
+
+                                                       
+                                                               <img class="avatar-md" src="dist/img/avatars/avatar-female-1.jpg" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar"-->
+                        
+                                                           </div>
+                                                            
+                                                           <div class="status">
+
+                                                           <i class="material-icons offline">fiber_manual_record</i>
+
+                                                       </div>
+                                            
+                                                      
+                                                           <P style="margin-top:50px;">Janette designer</P>  
+                                                           
+                                                               <p style="font-size:14px; margin-left:20px;  margin-top:40px;"><b>Hello i am writing you about the job.i am UX/UI Designer.who as 3+ years experience in this &nbsp;field.i have graduated from california state university.<br> i will be glade to work with you!</b></p>
+                                                            
+                                                       
+                                                       
+                                                            <img
+                                                             
+                                                              src="Jobbyen_assets/More_Buton.svg"
+                                                              alt="error"
+                                                              name="interview search"
+                                                            />
+                                                     
+
+                                                        <!--/video cam-->
+                              
+                                                   
+                                                       </div>
+                                                    <hr>
+
+                                                    <div class="inside">
+                                                        
+                                                             
+                                                   <div class="filterDiscussions all unread single active" id="list-chat-list" data-toggle="list" role="tab">
+
+                                                       <img class="avatar-md" src="dist/img/avatars/avatar-female-1.jpg" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar"-->
+                                                          
+
+                                                   </div>
+                                                              <div class="status">
+
+                                                           <i class="material-icons offline">fiber_manual_record</i>
+
+                                                       </div>
+                                                 
+                                                      <P style="margin-top:40px;">Janette
+                                                       Engineer</P> 
+
+                                                    <p style="font-size:14px;   margin-left:40px; margin-top:40px;"><b>Hello, i am senior front end developer i have worked in many companies like Uber,Amazon and Microsoft i have 10+ years experience in development after interviews </b></p>
+
+
+                                                         
+                                                        <!--/video cam-->
+                                                      
+                                                         <img
+                                                             
+                                                              src="Jobbyen_assets/More_Buton.svg"
+                                                              alt="error"
+                                                              name="interview search"
+                                                            />
+                                                     
+                                                   </div>
+                                           
+                                                    <hr>
+
+                                                    <div class="inside">
+                                                        
+                                                             
+                                                   <div class="filterDiscussions all unread single active" id="list-chat-list" data-toggle="list" role="tab">
+
+                                                       <img class="avatar-md" src="dist/img/avatars/avatar-female-1.jpg" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar"-->
+                                                          
+
+                                                   </div>
+                                                              <div class="status">
+
+                                                           <i class="material-icons offline">fiber_manual_record</i>
+
+                                                       </div>
+                                                  
+                                                  <P style="margin-top:40px;">Janette
+                                                       Developer</P> 
+
+                                                    <p style="font-size:14px;   margin-left:40px; margin-top:40px;"><b>Hello, i am senior front end developer i have worked in many companies like Uber,Amazon and Microsoft i have 10+ years experience in development after interviews </b></p>
+                                                         
+                                                        <!--/video cam-->
+                                                      
+                                                      <img
+                                                             
+                                                              src="Jobbyen_assets/More_Buton.svg"
+                                                              alt="error"
+                                                              name="interview search"
+                                                            />
+
+                                                   </div>
+                                                 <hr>
+                                                   
+                                                    <div class="inside">
+                                                        
+                                                             
+                                                   <div class="filterDiscussions all unread single active" id="list-chat-list" data-toggle="list" role="tab">
+
+                                                       <img class="avatar-md" src="dist/img/avatars/avatar-female-1.jpg" data-toggle="tooltip" data-placement="top" title="Janette" alt="avatar"-->
+                                                          
+
+                                                   </div>
+                                                              <div class="status">
+
+                                                           <i class="material-icons offline">fiber_manual_record</i>
+
+                                                       </div>
+                                                  
+                                             
+                                                  <P style="margin-top:40px;">Janette
+                                                       Developer</P> 
+
+                                                      <p style="font-size:14px;margin-left:40px;  margin-top:40px;">Vivamus eget aliquam dui.integer eu arcu suscipit ultrices quis non mauris Aenean scelerisque,sem eu dictum commodo.</p>
+
+
+                                                         
+                                                        <!--/video cam-->
+                                                      <img
+                                                             
+                                                              src="Jobbyen_assets/More_Buton.svg"
+                                                              alt="error"
+                                                              name="interview search"
+                                                            />
+
+                                                   </div>
+                                                     
+                                            
+
+                                               </div>
+
+                                           </div>
+
+                                       </div>
+
+                                       
+                                       <div class="content" id="content">
+
+                                           <div class="container">
+
+                                               <div class="col-md-12">
+
+                                                   <div class="date">
+
+                                                       <hr>
+
+                                                       <hr>
+
+                                                   </div>
+                                                   
+                                                <!-- text area-->       
+
+                                               </div>
+
+                                           </div>
+
+                                       </div>
+                                       
+                                     
+                                   </div>
+
+
+                               </div>
+
+
+                           </div>
+
+                       </div>
+                       
+   
+                 <div class="col-md-3">
+          <h5 class="Interviewers-3" style="font-size:20px;">Interviewers (3)</h5>
+          <div class="interviewers-list-container">
+      
+            <div class="interviewer-search-container">
+              <span class="mt-3 mr-3">
+                <img
+                  src="Jobbyen_assets/search_icon.svg"
+                  height="18px"
+                  width="18px"
+                  alt="error"
+                  style="margin-bottom:10px;"     
+                  name="interview search"
+                />
+              </span>
+              <input
+                type="text"
+                placeholder="Search...."
+                id="interview-search"
+              />
+              <span class="mt-3 ">
+                <img
+                  height="18px"
+                  width="18px"
+                  src="Jobbyen_assets/More_Buton.svg"
+                  alt="error"
+                  name="interview search"
+                />
+              </span>
+            </div>
+            <ul class="list-group interviewer-list-group " >
+              <li class="mt-4" >
+                <div  >
+                   <div class="float-left">
+                      <img
+                    src="dist/img/avatars/avatar-female-5.PNG"
+                     style="border-radius:100px; height:30px; width:30px;"
+                  /><span class="video-person-online"></span>
+                   </div>
+         <div class="float-left" >
+             <p class="video-person-name mb-0" style="font-size:15px; color:black; margin-left:12px;"><b>Janette Dalton</b></p>
+            <p class="small ml-2" style="font-size:12px; margin-left:20px; text-gray-700;">Software Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today</p> 
+            
+         </div>
+                </div>
+                  <button type="button" class="btn btn-primary" style="background-color:#2196F3; width:270px; height:45px; border-radius: 12px; margin-bottom:20px;">Start Interview</button>
+               
+              </li>
+                
+                    <ul class="list-group interviewer-list-group " >
+              <li class="mt-3" >
+                <div  >
+                   <div class="float-left" >
+                      <img
+                    src="dist/img/avatars/avatar-female-5.PNG"
+                     style="border-radius:100px; height:30px; width:30px;"
+                  /><span class="video-person-online"></span>
+                   </div>
+         <div class="float-left" >
+             <p class="video-person-name mb-0" style="font-size:15px; color:black; margin-left:12px;"><b>Janette Dalton</b></p>
+            <p class="small ml-2" style="font-size:12px; margin-left:20px; color:gry;">Software Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today</p> 
+            
+         </div>
+                </div>
+                  
+                  <button type="button" class="btn btn-primary" style="background-color:#6e7682; width:270px; height:45px; border-radius: 12px; font-size:8;"> <i class='far fa-clock'></i>&nbsp;22h&nbsp;|&nbsp;34m&nbsp;|&nbsp;47s&nbsp;</button>
+               
+              </li>
+                            <ul class="list-group interviewer-list-group " >
+              <li class="mt-3" >
+                <div  >
+                   <div class="float-left" >
+                      <img
+                    src="dist/img/avatars/avatar-female-5.PNG"
+                     style="border-radius:100px; height:30px; width:30px;"
+                  /><span class="video-person-online"></span>
+                   </div>
+       <div class="float-left" >
+             <p class="video-person-name mb-0" style="font-size:15px; color:black; margin-left:12px;"><b>Janette Dalton</b></p>
+            <p class="small ml-2" style="font-size:12px; margin-left:20px; color:gry;">Software Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Today</p> 
+            
+         </div>
+                </div>
+                      <button type="button" class="btn btn-primary" style="background-color:#6e7682; width:270px; height:45px;font-size:8; border-radius: 12px; margin-top:20px;"> <i class='far fa-clock'></i>&nbsp;22h&nbsp;|&nbsp;34m&nbsp;|&nbsp;47s&nbsp;</button>
+              </li>
+                                    <ul class="list-group interviewer-list-group " >
+            
+            
+     
+            </ul>
+          </div>
+        </div>
+  
+  
+                 </div> 
+
+  
+       </main>
+
+    <!-- CTA
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-left-left">
+          <div class="col-12 col-md-10 col-lg-8 text-left">
+
+            <!-- Text -->
+         
+               
+            </div> <!-- / .row -->
+               
+            <p>
+                 
+                <b style="color:black; font-size:30px">Looking for a job?</b><br>browser thousand of job offer and find the best suitable position.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
+                
+                <a href="#!" class="btn btn-success right" style="background-color:#2196F3; border-radius:12px;">
+              
+                    Get started now
+            
+                </a>
+            
+            </p>
+
+          
+          </div>
+      
+      
+        </div> <!-- / .container -->
+    
+       </section>
+   <hr style="margin-left:180px; margin-right:180px; color:#ccccff; background-color:#ccccff;">
+             
+                   <!--hr style="margin-left:180px; margin-right:180px;"-->  
+     
+       <footer class="col-md-12  bg-white-200">
+      
+           <div class="container">
+        
+               <div class="row">
+          
+                   <div class=" col-md-2 ">
+        
+            
+                       <!-- Brand -->
+            
+                       <a href="#"><img src="dist/img/logo.PNG" alt="..." style="height:50px; width:100px;" class="footer-brand img-fluid mb-5">
+                       </a> <br>
+
+                       
+                       <!-- Text -->
+            
+                       <p class="text-grey-700 mb-4">
+                
+                           <i class="fas fa-mobile-alt text-gray-500">: +1-000-000-00</i>
+            
+                       </p>
+         
+                       <p class="text-grey-700 mb-4">      
+       
+            
+                          <i class="fas fa-at  text-gray-500">:demo@gmail.com</i>   
+              
+                       </p>
+          
+                   </div>
+          
+                   
+                   <div class="col-md-4 ">
+            
+                       <!-- Heading -->
+
+                       <h5 class="font-weight-bold text-uppercase text-gray-700">
+                
+                           <b><p style="color:black;">For job searcher</p></b>
+            
+                       </h5>
+
+            
+                       <!-- List -->
+            
+                       <ul class="list-unstyled text-muted mb-4 mb-md-4 mb-lg-0">
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Create an account
+                
+                               </a>
+              
+                           </li>
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Design your cv
+                
+                               </a>
+              
+                           </li>
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Apply to a job
+                
+                               </a>
+              
+                           </li>
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Jobe searcher FAQ
+                
+                               </a>
+              
+                           </li>
+              
+                           <li>
+                
+                               <a href="#!" class="text-reset">
+                
+                               </a>
+              
+                           </li>
+            
+                       </ul>
+
+          
+                   </div>
+            
+    
+                   <div class="col-md-4">
+
+                       <!-- Heading -->
+            
+                       <h5 class="font-weight-bold text-uppercase text-gray-700">
+                
+                           <b><p style="color:black;">For Employers</p></b>
+            
+                       </h5>
+
+            
+                       <!-- List -->
+            
+                       <ul class="list-unstyled text-muted mb-6 mb-md-6 mb-lg-0">
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Post a job
+                
+                               </a>
+              
+                           </li>
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Search Resumes
+                
+                               </a>
+              
+                           </li>
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Advance search
+                
+                               </a>
+            
+                           </li>
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Help
+                
+                               </a>
+              
+                           </li>
+              
+                           <li>
+                
+                               <a href="#!" class="text-reset">
+                  
+                
+                               </a>
+              
+                           </li>
+            
+                       </ul>
+          
+                   </div>
+                            
+         
+                   <div class="col-md-2">
+        
+
+                       <!-- Heading -->
+            
+                       <h5 class="font-weight-bold text-uppercase text-gray-700">
+                
+                           <b><p style="color:black;">Websites</p></b>
+            
+                       </h5>
+
+
+                       <!-- List -->
+            
+                       <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Contact
+                
+                               </a>
+              
+                           </li>
+              
+                        
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Support
+                
+                               </a>
+              
+                          
+                           </li>
+        
+                           
+                           
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   Blog
+                
+                               </a>
+              
+                           </li>
+              
+                           
+                           <li class="mb-3">
+                
+                               <a href="#!" class="text-reset">
+                  
+                                   About
+                
+                               </a>
+              
+                           </li>
+            
+                           
+                           <li>
+                
+                               <a href="#!" class="text-reset">
+                  
+                               </a>
+              
+                           </li>
+            
+                       </ul>
+
+                   </div>
+            
+              <hr style="height:100%; width:100%">
+             
+             
+                   <!-- Social-->
+              
+                   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  
+                   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+           
+                   <div  class="social">
+            
+                       <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                           
+                    
+                           <img src="dist/img/FLAG.PNG" style="height:30px; width:30px; border-radius:4px; margin-bottom:3px;" alt="Error" name="flag">
+                
+                           <select class="selectpicker" data-width="fit" style="height:30px;">
+                     
+                    
+                               <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                         
+                
+                           </select>
+
+         
+                           <script>        
+        
+                               $(function(){
+                    
+                                   $('.selectpicker').selectpicker();
+                     
+                               });
+           
+            
+                           </script>
+        
+                           &nbsp;&nbsp;&nbsp;&nbsp;
+              
+                           <li class="list-inline-item list-social-item mr-3">
+                
+            
+                               <i class="fab fa-facebook-f" style="color:grey;"></i>
+                
+                              </li>
+            
+            
+                           <li class="list-inline-item list-social-item mr-3">
+                
+                        
+                               <i class="fab fa-instagram" style="color:grey;"></i>
+                
+                              </li>
+              
+              
+                           <li class="list-inline-item list-social-item mr-3">
+                                 
+                  
+                               <i class="fab fa-twitter" style="color:grey;"></i>
+                
+              
+                               </li>
+    
+                       </ul>
+    
+ 
+                   </div>
+            
+                   <p class="  text-gray-500">2019&#9400; jobbyen Aps.All right reserved</p>
+        
+               </div> <!-- / .row -->
+      
+           </div> <!-- / .container -->
+        
+
+       </footer>
+    
+       <!-- javascript-->
+
+
+       
+       <script src="dist/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="b30eb92dd8fff17a31f2279b-text/javascript"></script>
+       
+        <script type="b30eb92dd8fff17a31f2279b-text/javascript">window.jQuery || document.write('<script src="dist/js/vendor/jquery-slim.min.js"><\/script>')</script>
+           
+
+        <script src="dist/js/vendor/popper.min.js" type="b30eb92dd8fff17a31f2279b-text/javascript"></script>
+
+        <script src="dist/js/swipe.min.js" type="b30eb92dd8fff17a31f2279b-text/javascript"></script>
+
+        <script src="dist/js/bootstrap.min.js" type="b30eb92dd8fff17a31f2279b-text/javascript"></script>
+
+        <script type="b30eb92dd8fff17a31f2279b-text/javascript">
+			function scrollToBottom(el) { el.scrollTop = el.scrollHeight; }
+			scrollToBottom(document.getElementById('content'));
+		
+        </script>
+          
+           <!-- ajax-->
+           
+           <script src="ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="b30eb92dd8fff17a31f2279b-|49" defer=""></script>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+      
+  </body>
+</html>
